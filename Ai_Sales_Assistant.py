@@ -29,7 +29,7 @@ def cosine_similarity(a, b):
     return np.dot(a, b) / (np.linalg.norm(a) * np.linalg.norm(b))
 
 
-st.title("🛍️ Product Search Chatbot")
+st.title("🛍️ AI Sales Assistant:")
 
 data = load_data()
 tokenizer, model = load_model()
