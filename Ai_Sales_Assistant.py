@@ -29,7 +29,7 @@ def cosine_similarity(a, b):
     return np.dot(a, b) / (np.linalg.norm(a) * np.linalg.norm(b))
 
 
-st.title("🛍️ AI Sales Assistant:")
+st.title("🛍️ AI Sales Assistant")
 
 data = load_data()
 tokenizer, model = load_model()
@@ -56,7 +56,7 @@ def search_products(query, k=5):
     results['similarity'] = similarities
     return results.sort_values(by='similarity', ascending=False)
 
-user_input = st.text_input("🔍 Ask me about a product:", placeholder="Type your query here...")
+user_input = st.text_input("🔍 Ask me about a product", placeholder="Type your course name...")
 
 if st.button("Search"):
     if user_input:
